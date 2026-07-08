@@ -1,0 +1,90 @@
+{
+  "expo": {
+    "name": "Hammer Radio",
+    "slug": "hammerradio-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#080D1A"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "live.hammerradio.app",
+      "buildNumber": "2",
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "Hammer Radio uses your microphone to send voice messages in chat.",
+        "NSCameraUsageDescription": "Hammer Radio uses your camera to send photos in chat.",
+        "NSPhotoLibraryUsageDescription": "Hammer Radio uses your photo library to share images in chat.",
+        "UIBackgroundModes": [
+          "audio"
+        ],
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+   "android": {
+  "package": "live.hammerradio.app",
+  "googleServicesFile": "./google-services.json",
+  "versionCode": 2,
+  "softwareKeyboardLayoutMode": "pan",
+  "permissions": [
+    "RECORD_AUDIO",
+    "MODIFY_AUDIO_SETTINGS",
+    "FOREGROUND_SERVICE",
+    "FOREGROUND_SERVICE_MEDIA_PLAYBACK",
+    "WAKE_LOCK",
+    "CAMERA",
+    "READ_MEDIA_IMAGES",
+    "READ_MEDIA_VIDEO",
+    "READ_EXTERNAL_STORAGE",
+    "RECEIVE_BOOT_COMPLETED",
+    "VIBRATE",
+    "POST_NOTIFICATIONS"
+  ],
+  "adaptiveIcon": {
+    "foregroundImage": "./assets/android-icon-foreground.png",
+    "backgroundImage": "./assets/android-icon-background.png",
+    "monochromeImage": "./assets/android-icon-monochrome.png",
+    "backgroundColor": "#080D1A"
+  }
+},
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification-icon.png",
+          "color": "#080D1A",
+          "sounds": []
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Hammer Radio uses your photo library to share images in chat.",
+          "cameraPermission": "Hammer Radio uses your camera to send photos in chat.",
+          "microphonePermission": "Hammer Radio uses your microphone to send voice messages in chat."
+        }
+      ],
+      [
+        "expo-av",
+        {
+          "microphonePermission": "Hammer Radio uses your microphone to send voice messages in chat."
+        }
+      ],
+      "expo-web-browser",
+      "expo-secure-store"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "e3b06c89-f7d3-403a-bf50-243e4799e522"
+      }
+    },
+    "owner": "jackson_hammer"
+  }
+}

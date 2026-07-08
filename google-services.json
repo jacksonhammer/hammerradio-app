@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "621020120834",
+    "project_id": "hammer-radio-395cb",
+    "storage_bucket": "hammer-radio-395cb.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:621020120834:android:eab8e2e872e4ae46e3641b",
+        "android_client_info": {
+          "package_name": "live.hammerradio.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFxPEU_w58pIdCFYYSV9bH9wL1EnmE20g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
