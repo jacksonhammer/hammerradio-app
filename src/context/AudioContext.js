@@ -23,6 +23,12 @@ export function AudioProvider({ children }) {
     return unsub;
   }, []);
 
+  // Keep lock screen / Bluetooth / CarPlay Now Playing metadata in sync
+  // whenever the song or live status changes.
+  useEffect(() => {
+    AudioService.updateNowPlayingMetadata(nowPlaying, isLive);
+  }, [nowPlaying, isLive]);
+
   const togglePlay = useCallback(async () => {
     if (playing) {
       setPlaying(false);
