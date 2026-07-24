@@ -25,32 +25,32 @@
         "ITSAppUsesNonExemptEncryption": false
       }
     },
-    "android": {
-      "package": "live.hammerradio.app",
-      "googleServicesFile": "./google-services.json",
-      "versionCode": 2,
-      "softwareKeyboardLayoutMode": "pan",
-      "permissions": [
-        "RECORD_AUDIO",
-        "MODIFY_AUDIO_SETTINGS",
-        "FOREGROUND_SERVICE",
-        "FOREGROUND_SERVICE_MEDIA_PLAYBACK",
-        "WAKE_LOCK",
-        "CAMERA",
-        "READ_MEDIA_IMAGES",
-        "READ_MEDIA_VIDEO",
-        "READ_EXTERNAL_STORAGE",
-        "RECEIVE_BOOT_COMPLETED",
-        "VIBRATE",
-        "POST_NOTIFICATIONS"
-      ],
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
-        "monochromeImage": "./assets/android-icon-monochrome.png",
-        "backgroundColor": "#080D1A"
-      }
-    },
+   "android": {
+  "package": "live.hammerradio.app",
+  "googleServicesFile": "./google-services.json",
+  "versionCode": 2,
+  "softwareKeyboardLayoutMode": "pan",
+  "permissions": [
+    "RECORD_AUDIO",
+    "MODIFY_AUDIO_SETTINGS",
+    "FOREGROUND_SERVICE",
+    "FOREGROUND_SERVICE_MEDIA_PLAYBACK",
+    "WAKE_LOCK",
+    "CAMERA",
+    "READ_MEDIA_IMAGES",
+    "READ_MEDIA_VIDEO",
+    "READ_EXTERNAL_STORAGE",
+    "RECEIVE_BOOT_COMPLETED",
+    "VIBRATE",
+    "POST_NOTIFICATIONS"
+  ],
+  "adaptiveIcon": {
+    "foregroundImage": "./assets/android-icon-foreground.png",
+    "backgroundImage": "./assets/android-icon-background.png",
+    "monochromeImage": "./assets/android-icon-monochrome.png",
+    "backgroundColor": "#080D1A"
+  }
+},
     "web": {
       "favicon": "./assets/favicon.png"
     },
@@ -77,9 +77,16 @@
           "microphonePermission": "Hammer Radio uses your microphone to send voice messages in chat."
         }
       ],
+      [
+        "expo-audio",
+        {
+          "microphonePermission": false,
+          "recordAudioAndroid": false
+        }
+      ],
+      "expo-asset",
       "expo-web-browser",
-      "expo-secure-store",
-      "expo-asset"
+      "expo-secure-store"
     ],
     "extra": {
       "eas": {
